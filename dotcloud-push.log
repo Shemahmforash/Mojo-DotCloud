@@ -1,0 +1,32 @@
+building file list ... done
+./
+dotcloud-push.log
+
+sent 598 bytes  received 34 bytes  180.57 bytes/sec
+total size is 2.45K  speedup is 3.88
+==> Pushing code with rsync from "./" to application cool
+==> Submitting a deployment request for application cool
+==> Deployment of revision rsync-1353777298695 scheduled for cool
+- 2012-11-24 (cool deployment, deploy_id=92b0fc53-3217-4b22-9b79-6365a1483a16)
+17:14:59: --> Deployment scheduled for application (cool) at revision rsync-1353777298695
+17:14:59: --> Building the application...
+17:14:59: [www] Fetching the previous build (revision rsync-1353777180993)
+17:15:00: [www] Provisioning a container for the build
+17:15:05: [www] Build started for revision rsync-1353777298695 (incremental build from revision rsync-1353777180993)
+17:15:05: [www] I am snapshotsworker_01/bob-1, and I will be your builder today.
+17:15:21: [www] Build completed successfully. Compiled image size is 90KB
+17:15:21: [www] Build successful for service (www)
+17:15:21: --> Application (cool) build is done
+17:15:21: --> Provisioning services' instances... (This may take a few minutes)
+17:15:21: [www] Using default scaling for service www (1 instance(s)).
+17:15:24: --> All services' instances have been provisioned. Installing code...
+17:15:24: [www.0] Installing build revision rsync-1353777298695 for service (www) instance #0
+17:15:30: [www.0] Running postinstall script...
+17:15:31: [www.0] Launching...
+17:15:33: [www.0] Waiting for the instance to become responsive...
+17:16:03: [www.0] WARNING: The service crashed at startup or is listening to the wrong port. It failed to respond on port "www" (42800) within 30 seconds. Please check the application logs.
+17:16:03: [www.0] Re-routing traffic to the new build...
+17:16:05: [www.0] Successfully installed build revision rsync-1353777298695 for service (www) instance #0
+17:16:05: [www.0] Installation successful for service (www) instance #0
+17:16:05: --> Application (cool) fully installed
+==> Application is live at http://cool-shemahmforash.dotcloud.com
